@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+.section{
+    width: 90vw;
+    height: 90vh;
+    margin: 200px auto;
+    overflow: hidden;
+    position: relative;
+    background: rgb(33, 216, 45) ;
+
+}
+
+.boll{
+    width: 60px;
+    height: 60px;
+    position: absolute;  /*fixed typo*/
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid #dae3e3;
+    animation: bounce 4s ease-in-out infinite;  /* smoother bounce*/
+
+}
+
+@keyframes bounce{
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 90%;
+        left: 25%;
+    }
+    50% {
+        top: 0%;
+        left: 50%;
+    }
+    75% {
+        top: 90%;
+        left: 75%;
+    }
+    100% {
+        top: 0%;
+        left: 100%;
+    }
+}
